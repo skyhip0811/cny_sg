@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/result', function () {
+    return view('result');
+});
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('formpage');
 });

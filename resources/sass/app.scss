@@ -1,1 +1,176 @@
 //
+.center {
+  margin: auto;
+}
+
+
+
+.el-input__inner{
+  border:none;
+  font-size: 20px;
+  text-align: center
+}
+
+video{
+	width: 100%;
+}
+
+body{
+	// height: 100vh;
+  background-image: url("assets/image/201912_SG_H5game_layout_OL_Background.png");
+  background-size:cover;
+}
+
+.el-input{
+  width: 150px;
+  
+  font-size:15px;
+
+}
+
+.toplogo{
+  background-image: url("assets/image/asiaray_logo.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 100px;
+  position: absolute;
+  top:0px;
+  width: 100%;
+}
+
+
+.el-main{
+	padding:0;
+}
+
+.el-carousel__mask{
+  opacity: 0;
+}
+
+.el-carousel__item .is-active .preview_thumbnail{
+  border: red 1px solid;
+}
+
+.ot {
+  width: 100%;
+   box-sizing: border-box;
+  height: 100vh;
+    margin-top: -100px;
+    padding-top: 100px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#app{
+	text-align: left;
+}
+.ot:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle ;
+  height: 100%;
+}
+
+.v-center{
+  
+  height: 100vh;
+  position: relative;
+  margin: 0px;
+}
+
+.v-center .el-container{
+
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
+  width: 100%;
+}
+
+
+.wrapper {
+  width:90%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.preview_thumbnail{
+  width: 100%;
+}
+
+#totext{
+  background-image:url("assets/image/totext.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position:right;
+  margin:10px;
+  margin-right: 10px;
+  height: 20px;
+  
+  display: block;
+}
+
+#fromtext{
+
+  background-image:url("assets/image/fromtext.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position:right;
+  margin:10px;
+  margin-right: 10px;
+  height: 20px;
+  display: block;
+
+}
+
+.carouseldiv{
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+.preview-thunmbail{
+  
+  height: 100%;
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ :not(.is-active)>.preview-thunmbail{
+  opacity: 0.8;
+}
+
+.thumbnail0{
+  background-image : url("assets/image/201912_SG_H5game_layout_OL_Gong.png");
+}
+.thumbnail1{
+  background-image : url("assets/image/201912_SG_H5game_layout_OL_Great.png");
+}
+.thumbnail2{
+  background-image : url("assets/image/201912_SG_H5game_layout_OL_Health.png");
+}
+.thumbnail3{
+  background-image : url("assets/image/201912_SG_H5game_layout_OL_Studies.png");
+}
+.thumbnail4{
+  background-image : url("assets/image/201912_SG_H5game_layout_OL_sweet.png");
+}
+
+.nameinput{
+margin: 5px auto;
+  text-align: center;
+  display:block;
+}
+
+.previewbutton{
+  background-image:url('assets/image/201912_SG_H5game_layout_OL_Preview.png');
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+}
