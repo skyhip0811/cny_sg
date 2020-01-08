@@ -15,6 +15,14 @@ Route::get('/result', function () {
     return view('result');
 });
 
-Route::get('/', function () {
+Route::get('/form', function () {
     return view('formpage');
+});
+
+Route::get('/', function () {
+    return view('start');
+});
+
+Route::get('/end',function(){
+	return view('ending');
 });

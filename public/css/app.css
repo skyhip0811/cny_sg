@@ -8,13 +8,35 @@
   text-align: center;
 }
 
+.namedisplay {
+  text-align: center;
+  font-size: 30px;
+  color: #fbb03b;
+  margin: 5px auto;
+}
+
+.name {
+  color: white;
+}
+
+.middlevideo {
+  max-width: 500px;
+  margin: auto;
+}
+
 video {
   width: 100%;
 }
 
+@font-face {
+  font-family: customfont;
+  src: url(/fonts/calli.ttf?cf5314ee904601704f832a9e5bec88d6);
+}
+
 body {
   background-image: url(/images/201912_SG_H5game_layout_OL_Background.png?b96083c1674db296ded96eb01a87fabd);
-  background-size: cover;
+  background-size: 100% auto;
+  font-family: customfont;
 }
 
 .el-input {
@@ -24,10 +46,10 @@ body {
 
 .toplogo {
   background-image: url(/images/asiaray_logo.png?766da64b273ba8b26a3b9dc4f3c4c657);
-  background-size: contain;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100px;
+  height: 110px;
   position: absolute;
   top: 0px;
   width: 100%;
@@ -56,8 +78,13 @@ body {
   margin: 0 auto;
 }
 
+.el-main {
+  overflow: hidden;
+}
+
 #app {
   text-align: left;
+  max-width: 400px;
 }
 
 .ot:before {
@@ -116,8 +143,8 @@ body {
 }
 
 .carouseldiv {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
 }
 
 .preview-thunmbail {
@@ -152,7 +179,7 @@ body {
 }
 
 .nameinput {
-  margin: 5px auto;
+  margin: 1vh auto;
   text-align: center;
   display: block;
 }
@@ -163,5 +190,78 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 50px;
+}
+
+.sharebutton {
+  background-image: url(/images/201912_SG_H5game_layout_OL_Send.png?54f5faa93dcce917b386dc6bb459b6bf);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.editbutton {
+  background-image: url(/images/201912_SG_H5game_layout_OL_Edit.png?bf2b578ffa175b62457b791b40156775);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.morebutton {
+  background-image: url(/images/201912_SG_H5game_layout_OL_More.png?8c1c09e635ec56d773deaf666df6423a);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.startbutton {
+  background-image: url(/images/201912_SG_H5game_layout_OL_Begin.png?06ec523d3713023f545bfebb49c193c3);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  margin: 2vh auto;
+}
+
+.fbbutton {
+  background-image: url(/images/201912_SG_H5game_layout_OL_Facebook.png?190297fab472ec7347fb55a6c79fc78c);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.text2020 {
+  background-image: url(/images/201912_SG_H5game_layout_OL_endgreeting.png?b8d851fd09f172fa8e37ab57db42de60);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 130px;
+}
+
+.text2020start2 {
+  background-image: url(/images/201912_SG_H5game_layout_OL_intro.png?bc7418245097ecb2f5e4012aa6eaf651);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.text2020start1 {
+  background-image: url(/images/201912_SG_H5game_layout_OL_Opengreeting.png?dc1132a0e06ff2b030ee2d2ba9906fbf);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+
+.endingmouse {
+  background-image: url(/images/201912_SG_H5game_layout_OL_mice.png?d07925988daead4acc40f2bc99f1b284);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
 }
 

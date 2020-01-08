@@ -18,26 +18,28 @@
 </head>
 <body class="v-center">
   <div class="toplogo"></div>
-  <div id="app" class="" receiverinput="{{ app('request')->input('to') }}" video="{{ app('request')->input('video') }}" senderinput = "{{ app('request')->input('from') }}">
+  <div id="app" class="">
     <el-container>
     <el-main>
-    <el-row class="namedisplay"> To:<span class="name"> {{ app('request')->input('to') }}</span></el-row>
     <el-row>
-      <div class="middlevideo" style=""class ="center">
-        <video loop  muted autoplay src ="assets/{{ app('request')->input('video') }}.mp4"></video>
-      </div>
+      <div class="text2020start1" style=""class ="center"></div>
     </el-row>
-    <el-row class="namedisplay">From: <span class="name">{{ app('request')->input('from') }}</span> </el-row>
+    <el-row>
+      <div class="text2020start2" style=""class ="center"></div>
+    </el-row>
+    <el-row>
+      <div class="endingmouse" style=""class ="center"></div>
 
-  <el-row :gutter="20">
-     <el-col :span="12"><div style="max-width:150px;" class="center">
-    <div class="editbutton" v-on:click="editclick" style="width:100%"></div>
-    </div></el-col>
-     <el-col :span="12"><div style="max-width:150px;" class="center">
-    <div class="sharebutton" v-on:click="shareclick" style="width:100%"></div>
+    </el-row>
+    
+
+  <el-row >
+     <el-col :span="24"><div  class="center">
+    <div class="startbutton" v-on:click="moreclick" style="width:100%"></div>
     </div></el-col>
     
     </el-row>
+
   </el-main>
       
     

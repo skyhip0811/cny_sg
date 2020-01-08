@@ -3,7 +3,7 @@ require('./bootstrap');
 
 window.Vue = new Vue({
   el: '#app',
-  props:["receiver_input","sender_input"],
+  props:["receiverinput","senderinput"],
   data: function() {
     return { 
   		"activeIndex":0
@@ -14,22 +14,29 @@ window.Vue = new Vue({
   		window.location.href = 'https://www.facebook.com/AsiarayOutdoorAdvertising/?fref=nf';
   	},
   	previewclick(){
-  		if(this.sender_input != undefined && this.receiver_input != undefined && this.activeIndex != undefined){
-  			var win = window.open('result?from='+this.sender_input+"&to="+this.receiver_input+"&video="+this.activeIndex, '_blank');
-  			win.focus();
+  		if(this.senderinput != undefined && this.receiverinput != undefined && this.activeIndex != undefined){
+  			window.location.href = ('result?from='+this.senderinput+"&to="+this.receiverinput+"&video="+"1" );
+  			
   		}else{
   			alert("some field missing");
   		}
   		
   	},
+    editclick(){
+      window.location.href = '/form';
+    },
+    moreclick(){
+      window.location.href = '/form';
+
+    },
   	shareclick(){
 
-  		if(this.sender_input != undefined && this.receiver_input != undefined && this.activeIndex != undefined){
-  			str = "Some Text \n\n"+ 'http://localhost/'+ 'result?from='+this.sender_input+"&to="+this.receiver_input+"&video="+this.activeIndex;
+  		if(this.senderinput != undefined && this.receiverinput != undefined && this.activeIndex != undefined){
+  			str = "Some Text \n\n"+ 'http://localhost/'+ 'result?from='+this.senderinput+"&to="+this.receiverinput+"&video="+"1";
   			urlencodedtext = encodeURIComponent(str);
   			var win = window.open('https://api.whatsapp.com/send?&text='+urlencodedtext);
   			win.focus();
-  			window.location.href = 'https://www.facebook.com/AsiarayOutdoorAdvertising/?fref=nf';
+  			window.location.href = '/end';
   		}else{
   			alert("some field missing");
   		}
@@ -39,9 +46,9 @@ window.Vue = new Vue({
   		this.activeIndex = e;
   	},
   	copytext(){
-  		if(this.sender_input != undefined && this.receiver_input != undefined && this.activeIndex != undefined){
+  		if(this.senderinput != undefined && this.receiverinput != undefined && this.activeIndex != undefined){
   			const el = document.createElement('textarea');
-			  el.value = "Some Text \n\n"+ 'http://localhost/'+ 'result?from='+this.sender_input+"&to="+this.receiver_input+"&video="+this.activeIndex ;
+			  el.value = "Some Text \n\n"+ 'http://localhost/'+ 'result?from='+this.senderinput+"&to="+this.receiverinput+"&video="+this.activeIndex ;
 			  document.body.appendChild(el);
 			  el.select();
 			  document.execCommand('copy');
@@ -50,5 +57,10 @@ window.Vue = new Vue({
   			alert("some field missing");
 		  }
   	}
+  },
+  mounted: function () {
+    this.receiverinput = this.$el.hasAttribute("receiverinput")?this.$el.attributes.receiverinput.value:null;
+    this.senderinput = this.$el.hasAttribute("senderinput")?this.$el.attributes.senderinput.value:null;
+    this.activeIndex = this.$el.hasAttribute("value")?this.$el.attributes.video.value:0;
   }
 })

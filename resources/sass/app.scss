@@ -11,14 +11,37 @@
   text-align: center
 }
 
+.namedisplay{
+  text-align: center;
+  font-size: 30px;
+  color: #fbb03b;
+  margin: 5px auto;
+}
+
+.name{
+  color:white;
+}
+
+.middlevideo{
+  max-width: 500px;
+  margin: auto;
+}
+
 video{
 	width: 100%;
+}
+
+@font-face {
+  font-family: customfont;
+  src: url("assets/calli.ttf");
 }
 
 body{
 	// height: 100vh;
   background-image: url("assets/image/201912_SG_H5game_layout_OL_Background.png");
-  background-size:cover;
+  background-size:100% auto;
+  font-family: customfont;
+
 }
 
 .el-input{
@@ -30,10 +53,10 @@ body{
 
 .toplogo{
   background-image: url("assets/image/asiaray_logo.png");
-  background-size:contain;
+  background-size:auto 100% ;
   background-repeat:no-repeat;
   background-position: center;
-  height: 100px;
+  height: 110px;
   position: absolute;
   top:0px;
   width: 100%;
@@ -63,8 +86,13 @@ body{
   margin: 0 auto;
 }
 
+.el-main{
+  overflow: hidden;
+}
+
 #app{
 	text-align: left;
+  max-width: 400px;
 }
 .ot:before {
   content: '';
@@ -128,8 +156,8 @@ body{
 }
 
 .carouseldiv{
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
 
 }
 
@@ -162,7 +190,7 @@ body{
 }
 
 .nameinput{
-margin: 5px auto;
+margin: 1vh auto;
   text-align: center;
   display:block;
 }
@@ -173,4 +201,81 @@ margin: 5px auto;
   background-position: center;
   background-repeat: no-repeat;
   height: 50px;
+}
+
+.sharebutton{
+  background-image:url('assets/image/201912_SG_H5game_layout_OL_Send.png');
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.editbutton{
+  background-image:url('assets/image/201912_SG_H5game_layout_OL_Edit.png');
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.morebutton{
+  background-image:url('assets/image/201912_SG_H5game_layout_OL_More.png');
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.startbutton{
+  background-image:url('assets/image/201912_SG_H5game_layout_OL_Begin.png');
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  margin: 2vh auto;
+}
+
+.fbbutton{
+  background-image:url('assets/image/201912_SG_H5game_layout_OL_Facebook.png');
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+
+
+.text2020{
+  background-image:url("assets/image/201912_SG_H5game_layout_OL_endgreeting.png");
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:130px;
+}
+.text2020start2{
+  background-image:url("assets/image/201912_SG_H5game_layout_OL_intro.png");
+  background-size:contain; 
+  background-position: center;
+  background-repeat: no-repeat;
+  height:50px;
+}
+
+.text2020start1{
+  background-image:url("assets/image/201912_SG_H5game_layout_OL_Opengreeting.png");
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100px;
+}
+
+
+
+
+.endingmouse{
+  background-image:url("assets/image/201912_SG_H5game_layout_OL_mice.png");
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:200px;
 }

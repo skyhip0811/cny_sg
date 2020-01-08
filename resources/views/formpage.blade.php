@@ -21,11 +21,11 @@
   <div id="app" class="wrapper">
     <el-container>
     <el-main>
-    <el-row class="name_input" >
+    <el-row class="nameinput" >
 
       <el-col :span ="8"><div id="totext"></div></el-col>
       <el-col :span ="16">
-      <el-input id="input_receiver" v-model="receiver_input" placeholder="Receiver"></el-input>
+      <el-input id="input_receiver" v-model="receiverinput" placeholder="Receiver"></el-input>
 
       </el-col>
      
@@ -55,15 +55,15 @@
     <el-row class='nameinput'>
     <el-col :span ="9"><div id="fromtext"></div></el-col>
       <el-col :span ="15">
-    <el-input  id="input_receiver" v-model="sender_input" placeholder="Sender"></el-input>
+    <el-input  id="input_sender" v-model="senderinput" placeholder="Sender"></el-input>
       </el-col>
     </el-row>
-    <el-row>
+    <el-row :gutter="20">
      <el-col :span="12"><div style="max-width:150px;" class="center">
     <div class="previewbutton" v-on:click="previewclick" style="width:100%"></div>
     </div></el-col>
      <el-col :span="12"><div style="max-width:150px;" class="center">
-    <el-button  v-on:click="shareclick" style="width:100%">Share</el-button>
+    <div class="sharebutton" v-on:click="shareclick" style="width:100%"></div>
     </div></el-col>
     
     </el-row>
