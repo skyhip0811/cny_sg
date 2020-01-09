@@ -24,7 +24,7 @@
     <el-row class="namedisplay"> To:<span class="name">@{{this.namedata[this.receiverinput]}}</span></el-row>
     <el-row>
       <div class="middlevideo" style=""class ="center">
-        <video playsinline id = "greetingvideo" loop  muted  src ="assets/{{ app('request')->input('video') }}.mp4"></video>
+        <video playsinline preload="metadata" id = "greetingvideo" loop  muted  src ="assets/{{ app('request')->input('video') }}.mp4"></video>
       </div>
     </el-row>
     <el-row class="namedisplay">From: <span class="name">@{{this.namedata[this.senderinput]}}</span> </el-row>
