@@ -47,7 +47,8 @@
   <script src="/js/app.js?v={{ env('js_version_number') }}"></script>
   <script>
   var vid = document.getElementById("greetingvideo");
-  vid.onloadeddata = function() {
+  vid.oncanplaythrough  = function() {
+    console.log("videoplay");
       vid.play();
   };
 
