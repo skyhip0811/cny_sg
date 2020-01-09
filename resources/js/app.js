@@ -38,7 +38,7 @@ window.Vue = new Vue({
   	shareclick(){
 
   		if(this.$refs.receivercarousel.getIndex() != undefined && this.$refs.sendercarousel.getIndex() != undefined && this.activeIndex != undefined){
-  			var str = "Some Text \n\n"+ 'http://localhost/'+ 'result?from='+this.$refs.sendercarousel.getIndex()+"&to="+this.$refs.receivercarousel.getIndex()+"&video="+"1";
+  			var str = "Some Text \n\n"+ 'http://'+location.host+'/'+ 'result?from='+this.$refs.sendercarousel.getIndex()+"&to="+this.$refs.receivercarousel.getIndex()+"&video="+"1";
   			var urlencodedtext = encodeURIComponent(str);
   			var win = window.open('https://api.whatsapp.com/send?&text='+urlencodedtext);
   			win.focus();
@@ -51,7 +51,7 @@ window.Vue = new Vue({
     shareclick2(){
 
       if(this.receiverinput != undefined && this.senderinput != undefined && this.activeIndex != undefined){
-        var str = "Some Text \n\n"+ 'http://localhost/'+ 'result?from='+this.senderinput+"&to="+this.receiverinput+"&video="+"1";
+        var str = "Some Text \n\n"+ 'http://'+location.host+'/'+ 'result?from='+this.senderinput+"&to="+this.receiverinput+"&video="+"1";
         var urlencodedtext = encodeURIComponent(str);
         var win = window.open('https://api.whatsapp.com/send?&text='+urlencodedtext);
         win.focus();
@@ -70,7 +70,7 @@ window.Vue = new Vue({
   	copytext(){
   		if(this.senderinput != undefined && this.receiverinput != undefined && this.activeIndex != undefined){
   			const el = document.createElement('textarea');
-			  el.value = "Some Text \n\n"+ 'http://localhost/'+ 'result?from='+this.senderinput+"&to="+this.receiverinput+"&video="+this.activeIndex ;
+			  el.value = "Some Text \n\n"+ 'http://'+location.host+'/'+ 'result?from='+this.senderinput+"&to="+this.receiverinput+"&video="+this.activeIndex ;
 			  document.body.appendChild(el);
 			  el.select();
 			  document.execCommand('copy');
