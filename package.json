@@ -20,6 +20,7 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
+        "@chenfengyuan/vue-carousel": "^1.0.2",
         "element-ui": "^2.13.0",
         "vue": "^2.6.11"
     }

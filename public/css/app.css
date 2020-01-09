@@ -15,6 +15,10 @@
   margin: 5px auto;
 }
 
+.totext {
+  color: #fbb03b;
+}
+
 .name {
   color: white;
 }
@@ -71,8 +75,8 @@ body {
   width: 100%;
   box-sizing: border-box;
   height: 100vh;
-  margin-top: -100px;
-  padding-top: 100px;
+  margin-top: -80px;
+  padding-top: 80px;
   display: inline-block;
   text-align: center;
   margin: 0 auto;
@@ -142,11 +146,6 @@ body {
   display: block;
 }
 
-.carouseldiv {
-  margin-top: 1.5vh;
-  margin-bottom: 1.5vh;
-}
-
 .preview-thunmbail {
   height: 100%;
   background-size: contain;
@@ -179,7 +178,6 @@ body {
 }
 
 .nameinput {
-  margin: 1vh auto;
   text-align: center;
   display: block;
 }
@@ -221,7 +219,7 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 50px;
+  height: 70px;
   margin: 2vh auto;
 }
 
@@ -263,5 +261,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 200px;
+}
+
+.carousel {
+  height: 60px;
+  font-size: 25px;
 }
 

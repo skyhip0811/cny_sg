@@ -23,10 +23,10 @@
     <el-main>
     <el-row class="nameinput" >
 
-      <el-col :span ="8"><div id="totext"></div></el-col>
-      <el-col :span ="16">
-      <el-input id="input_receiver" v-model="receiverinput" placeholder="Receiver"></el-input>
+    
 
+<!--       <el-input id="input_receiver" v-model="receiverinput" placeholder="Receiver"></el-input> -->
+      <carousel ref ="receivercarousel" actived="0" sis="To"></carousel>
       </el-col>
      
     </el-row>
@@ -53,9 +53,7 @@
       </div>
     </el-row>
     <el-row class='nameinput'>
-    <el-col :span ="9"><div id="fromtext"></div></el-col>
-      <el-col :span ="15">
-    <el-input  id="input_sender" v-model="senderinput" placeholder="Sender"></el-input>
+    <carousel ref ="sendercarousel" sis="From"></carousel>
       </el-col>
     </el-row>
     <el-row :gutter="20">

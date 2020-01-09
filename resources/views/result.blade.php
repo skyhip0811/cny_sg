@@ -21,20 +21,20 @@
   <div id="app" class="" receiverinput="{{ app('request')->input('to') }}" video="{{ app('request')->input('video') }}" senderinput = "{{ app('request')->input('from') }}">
     <el-container>
     <el-main>
-    <el-row class="namedisplay"> To:<span class="name"> {{ app('request')->input('to') }}</span></el-row>
+    <el-row class="namedisplay"> To:<span class="name">@{{this.namedata[this.receiverinput]}}</span></el-row>
     <el-row>
       <div class="middlevideo" style=""class ="center">
-        <video loop  muted autoplay src ="assets/{{ app('request')->input('video') }}.mp4"></video>
+        <video id = "greetingvideo" loop  muted  src ="assets/{{ app('request')->input('video') }}.mp4"></video>
       </div>
     </el-row>
-    <el-row class="namedisplay">From: <span class="name">{{ app('request')->input('from') }}</span> </el-row>
+    <el-row class="namedisplay">From: <span class="name">@{{this.namedata[this.senderinput]}}</span> </el-row>
 
   <el-row :gutter="20">
      <el-col :span="12"><div style="max-width:150px;" class="center">
     <div class="editbutton" v-on:click="editclick" style="width:100%"></div>
     </div></el-col>
      <el-col :span="12"><div style="max-width:150px;" class="center">
-    <div class="sharebutton" v-on:click="shareclick" style="width:100%"></div>
+    <div class="sharebutton" v-on:click="shareclick2" style="width:100%"></div>
     </div></el-col>
     
     </el-row>
@@ -45,4 +45,11 @@
   </div>
 </body>
   <script src="/js/app.js?v={{ env('js_version_number') }}"></script>
+  <script>
+  var vid = document.getElementById("greetingvideo");
+  vid.onloadeddata = function() {
+      vid.play();
+  };
+
+  </script>
 </html>
