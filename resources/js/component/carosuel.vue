@@ -23,18 +23,18 @@
       return {
 
         data: [
-          '<div class="name"><span class="totext">'+this.sis+': </span>Dude</div>',
           '<div class="name"><span class="totext">'+this.sis+': </span>Boss</div>',
-          '<div class="name"><span class="totext">'+this.sis+': </span>Sunshine</div>',
           '<div class="name"><span class="totext">'+this.sis+': </span>Me</div>',
           '<div class="name"><span class="totext">'+this.sis+': </span>Mum</div>',
-          '<div class="name"><span class="totext">'+this.sis+': </span>Auntie</div>',
-          '<div class="name"><span class="totext">'+this.sis+': </span>Bae</div>',
-          '<div class="name"><span class="totext">'+this.sis+': </span>Peeps</div>',
-          '<div class="name"><span class="totext">'+this.sis+': </span>Precious</div>',
+          '<div class="name"><span class="totext">'+this.sis+': </span>Sunshine</div>',
+          '<div class="name"><span class="totext">'+this.sis+': </span>Squad</div>',
+          '<div class="name"><span class="totext">'+this.sis+': </span>Hubby</div>',
           '<div class="name"><span class="totext">'+this.sis+': </span>You</div>',
           '<div class="name"><span class="totext">'+this.sis+': </span>Dad</div>',
-          '<div class="name"><span class="totext">'+this.sis+': </span>Uncle </div>',
+          '<div class="name"><span class="totext">'+this.sis+': </span>Uncle</div>',
+          '<div class="name"><span class="totext">'+this.sis+': </span>Auntie</div>',
+          '<div class="name"><span class="totext">'+this.sis+': </span>Sweetie</div>',
+          '<div class="name"><span class="totext">'+this.sis+': </span>Wifey</div>',
         ],
       };
     },
