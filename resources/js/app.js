@@ -11,7 +11,7 @@ window.Vue = new Vue({
     return { 
   		"activeIndex":0,
       "namedata":[
-        "Dude","Boss","Sunshine","Me","Mum","Auntie","Bae","Peeps","Precious","You","Dad","Uncle"
+        "Boss","Me","Mum","Sunshine","Squad","Hubby","You","Dad","Uncle","Auntie","Sweetie","Wifey"
       ]
     }
   },
