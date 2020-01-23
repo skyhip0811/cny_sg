@@ -17,7 +17,7 @@ window.Vue = new Vue({
   },
   methods:{
   	fbclick(){
-  		window.location.href = 'https://www.facebook.com/AsiarayOutdoorAdvertising/?fref=nf';
+  		window.location.href = 'https://www.facebook.com/Asiaray-Advertising-Singapore-105755787631094/?fref=nf';
   	},
   	previewclick(){
   		if(this.$refs.sendercarousel.getIndex() != undefined && this.$refs.receivercarousel.getIndex() != undefined && this.activeIndex != undefined){
@@ -83,7 +83,7 @@ window.Vue = new Vue({
   mounted: function () {
     this.receiverinput = this.$el.hasAttribute("receiverinput")?this.$el.attributes.receiverinput.value:null;
     this.senderinput = this.$el.hasAttribute("senderinput")?this.$el.attributes.senderinput.value:null;
-    this.activeIndex = this.$el.hasAttribute("value")?this.$el.attributes.video.value:0;
+    this.video = this.$el.hasAttribute("video")?this.$el.attributes.video.value:0;
     window.onresize = this.sizechange;
   }
 })
