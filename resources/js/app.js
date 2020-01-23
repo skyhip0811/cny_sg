@@ -21,7 +21,7 @@ window.Vue = new Vue({
   	},
   	previewclick(){
   		if(this.$refs.sendercarousel.getIndex() != undefined && this.$refs.receivercarousel.getIndex() != undefined && this.activeIndex != undefined){
-  			window.location.href = ('result?from='+this.$refs.sendercarousel.getIndex()+"&to="+this.$refs.receivercarousel.getIndex()+"&video="+"1" );
+  			window.location.href = ('result?from='+this.$refs.sendercarousel.getIndex()+"&to="+this.$refs.receivercarousel.getIndex()+"&video="+this.activeIndex );
   			
   		}else{
   			alert("some field missing");
@@ -38,7 +38,7 @@ window.Vue = new Vue({
   	shareclick(){
 
   		if(this.$refs.receivercarousel.getIndex() != undefined && this.$refs.sendercarousel.getIndex() != undefined && this.activeIndex != undefined){
-  			var str = "Some Text \n\n"+ 'http://'+location.host+'/'+ 'result?from='+this.$refs.sendercarousel.getIndex()+"&to="+this.$refs.receivercarousel.getIndex()+"&video="+"1";
+  			var str = "Some Text \n\n"+ 'http://'+location.host+'/'+ 'result?from='+this.$refs.sendercarousel.getIndex()+"&to="+this.$refs.receivercarousel.getIndex()+"&video="+this.activeIndex;
   			var urlencodedtext = encodeURIComponent(str);
   			var win = window.open('https://api.whatsapp.com/send?&text='+urlencodedtext);
   			win.focus();
@@ -51,7 +51,7 @@ window.Vue = new Vue({
     shareclick2(){
 
       if(this.receiverinput != undefined && this.senderinput != undefined && this.activeIndex != undefined){
-        var str = 'http://'+location.host+'/'+ 'result?from='+this.senderinput+"&to="+this.receiverinput+"&video="+"1";
+        var str = 'http://'+location.host+'/'+ 'result?from='+this.senderinput+"&to="+this.receiverinput+"&video="+this.activeIndex;
         var urlencodedtext = encodeURIComponent(str);
         var win = window.open('https://api.whatsapp.com/send?&text='+urlencodedtext);
         win.focus();
