@@ -51,7 +51,7 @@ window.Vue = new Vue({
     shareclick2(){
 
       if(this.receiverinput != undefined && this.senderinput != undefined && this.activeIndex != undefined){
-        var str = "Some Text \n\n"+ 'http://'+location.host+'/'+ 'result?from='+this.senderinput+"&to="+this.receiverinput+"&video="+"1";
+        var str = 'http://'+location.host+'/'+ 'result?from='+this.senderinput+"&to="+this.receiverinput+"&video="+"1";
         var urlencodedtext = encodeURIComponent(str);
         var win = window.open('https://api.whatsapp.com/send?&text='+urlencodedtext);
         win.focus();
