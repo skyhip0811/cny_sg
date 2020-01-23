@@ -34,9 +34,8 @@
       <div class ="carouseldiv">
         <el-carousel  indicator-position='none'  v-on:change="carouselchange" :autoplay=false :interval="4000" type="card">
           <el-carousel-item>
-         
-            <div class="preview-thunmbail thumbnail0"></div>
-                   </el-carousel-item>
+          <div class="preview-thunmbail thumbnail0"></div>
+          </el-carousel-item>
           <el-carousel-item>
             <div class="preview-thunmbail thumbnail1"></div>
           </el-carousel-item>

@@ -5,8 +5,12 @@
   <meta name="csrf-token">
   <meta name="google-site-verification" content="-aHBTAJnBgoPa3Gi8-Uaugq7p3JYXj7rqZUxXrFb1ig" />
   <title>Asiaray SG CNY</title>
-  <meta name='description' content ="Asiaray says Happy Chinese new year to Singapore">
+  <!-- Share Social Media-->
+  <meta property="og:title" content="【Asiaray & TEL】presents: Chinese New Year blessings from a special person to you ❤" />
+  <meta property="og:image" content="http://cny.asiaray.sg/images/thumbnail.jpg" />
+  
   <!-- import CSS -->
+
   <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css?v={{ env('js_version_number') }}">
   <link rel="stylesheet" type="text/css" href="/css/app.css?v={{ env('js_version_number') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
