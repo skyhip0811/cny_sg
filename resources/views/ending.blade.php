@@ -13,6 +13,15 @@
   <script src="/js/manifest.js?v={{ env('js_version_number') }}"></script>
   <script src="/js/vendor.js?v={{ env('js_version_number') }}"></script>
   <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124567671-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124567671-2');
+</script>
 
 
 </head>
