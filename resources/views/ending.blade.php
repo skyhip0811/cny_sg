@@ -49,7 +49,7 @@
     </el-row>
     <el-row >
      <el-col :span="24"><div  class="center">
-    <div class="fbbutton" v-on:click="fbclick" style="width:100%"></div>
+    <div class="fbbutton" v-on:click="fbclick" style="width:100%">Asiaray Advertising Singapore</div>
     </div></el-col>
     
     </el-row>
